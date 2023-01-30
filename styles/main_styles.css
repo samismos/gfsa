@@ -405,9 +405,9 @@ section
 	top: 22px;
 	left: 23px;
 	width: calc(100% - 48px);
-	background: #0a2642;
+	background: #27790e;
 	z-index: 100;
-	border-bottom: solid 2px #7f66ff;
+	border-bottom: solid 2px #febffb;
 }
 .header_content
 {
@@ -424,6 +424,31 @@ section
 {
 	height: 75px;
 }
+.header.scrolled .logo-img {
+	animation: logo-down 0.5s;
+	scale: 0.7;
+}
+
+@keyframes logo-down {
+	from {scale: 0.95;}
+	to {scale: 0.7;}
+}
+@keyframes logo-up {
+	from {scale: 0.7;}
+	to {scale: 0.95;}
+}
+.logo-img {
+	animation: logo-up 0.5s;
+	scale: 0.95;
+	max-width: 150px;
+	max-height: 94;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(16, 59, 3, 0.19);
+	
+}
+.logo-img::after  {
+	scale: 0.8;
+}
+
 .logo
 {
 	display: inline-block;
@@ -487,7 +512,7 @@ section
 }
 .main_nav > ul > li.active.has_children > a::after
 {
-	color: #7f66ff;
+	color: #000000;
 }
 .main_nav > ul > li:not(:last-of-type)
 {
@@ -504,7 +529,7 @@ section
 .main_nav > ul > li.active a,
 .main_nav > ul > li > a:hover::after
 {
-	color: #7f66ff;
+	color: #febffb;
 }
 .main_nav ul li > ul
 {
@@ -580,7 +605,7 @@ section
 {
 	height: 100%;
 	width: 200px;
-	background: #7f66ff;
+	background: #febffb;
 	text-align: center;
 }
 .header_link a
@@ -594,7 +619,7 @@ section
 	position: relative;
 	font-size: 14px;
 	font-weight: 900;
-	color: #ffffff;
+	color: #004b06;
 	line-height: 96px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
@@ -607,6 +632,10 @@ section
 .header.scrolled .header_link a span
 {
 	line-height: 75px;
+}
+.header.scrolled .header_link a img
+{
+	scale: 0.6;
 }
 .header_link a span > img
 {
@@ -649,7 +678,7 @@ section
 }
 .social ul li:hover
 {
-	background: #7f66ff;
+	background: #febffb;
 }
 .social ul li a
 {
@@ -688,7 +717,7 @@ section
 }
 .log_reg ul li a:hover
 {
-	color: #7f66ff;
+	color: #febffb;
 }
 .hamburger
 {
