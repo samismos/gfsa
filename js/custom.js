@@ -15,6 +15,25 @@
 
 ******************************/
 
+/* Typewriter */
+const words = ['green.&nbsp&nbsp&nbsp', 'nature.&nbsp&nbsp&nbsp ', 'IFSA.&nbsp&nbsp&nbsp&nbsp&nbsp'];
+let i = 0;
+
+document.getElementById("changing-word").innerHTML = words[i];
+i = (i + 1) % words.length;
+
+function loop() {
+  setTimeout(function() {
+    document.getElementById("changing-word").innerHTML = words[i];
+    i = (i + 1) % words.length;
+    loop();
+  }, 2500);
+}
+loop();
+
+
+
+
 $(document).ready(function()
 {
 	"use strict";
@@ -141,6 +160,7 @@ $(document).ready(function()
 	5. Init Timer
 
 	*/
+	
 
 	function initTimer()
     {

@@ -320,7 +320,7 @@ section
 }
 .button_1::after
 {
-	background: #7f66ff;
+	background: #febffb;
 }
 .button_2::after
 {
@@ -737,7 +737,7 @@ section
 }
 .hamburger:hover i
 {
-	color: #7f66ff;
+	color: #feb;
 }
 
 /*********************************
@@ -754,7 +754,7 @@ section
 	z-index: 101;
 	visibility: hidden;
 	opacity: 0;
-	background: rgba(10,38,66,0.92);
+	background: rgba(0, 60, 14, 0.918); 
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -785,7 +785,7 @@ section
 }
 .menu_close:hover i
 {
-	color: #7f66ff;
+	color: #febffb;
 }
 .menu_content
 {
@@ -813,7 +813,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #7f66ff;
+	color: #febffb;
 }
 .menu_social
 {
@@ -867,7 +867,7 @@ section
 }
 .home_title h1 span:first-of-type
 {
-	color: #ff9000;
+	color: #2f2f2f;
 }
 .home_info_container
 {
@@ -879,7 +879,7 @@ section
 	height: 49px;
 	padding-left: 22px;
 	padding-right: 24px;
-	background: #7f66ff;
+	background: #febffb;
 }
 .home_info ul
 {
@@ -938,7 +938,7 @@ section
 .home_slider_custom_dot.active,
 .home_slider_custom_dot:hover
 {
-	background: #7f66ff;
+	background: #febffb;
 }
 .home_slider .owl-dots
 {
@@ -953,6 +953,91 @@ section
 {
 	
 }
+
+.typewriter-container {
+	display: inline-block !important;
+	height: 10vh;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: Noto;
+	color: #febffb;
+}
+.typewriter-container p {
+	display: inline-block;
+	text-align: center;
+	font-family: Noto;
+	color: #febffb;
+	font-size: 3vw;
+	position: absolute;
+	white-space: nowrap;
+}
+
+#changing-word {
+	display: inline-block !important;
+	position: absolute;
+	font-size: 3.5vw;
+	font-family: NotoBold;
+	overflow: hidden;
+    border-right: .15em solid #febffb;
+	color: #febffb;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2.5s  steps(12, end) forwards infinite, blink 1.2s infinite;
+}
+
+table {
+	width: 100%;
+	height: 80%;
+	margin: auto;
+}
+table .type-first {
+	text-align: right;
+	border: solid white;
+	font-family: Noto;
+	color: #febffb;
+	font-size: 5vw;
+	white-space: nowrap;
+
+}
+
+
+.typed-out {
+	display: inline-block !important;
+	text-align: center;
+	margin-left: 250px;
+	margin-top: 22px;
+	overflow: hidden;
+    border-right: .15em solid #febffb;
+	color: #febffb;
+    white-space: nowrap;
+    font-size: 6vw;
+    width: 0;
+    animation: typing 2.5s  steps(12, end) forwards infinite, blink 1.2s infinite;
+}
+@font-face{
+	font-family: NotoBold;
+	/*src: url("../../fonts/Dancing\ Script.ttf"); */
+	src: url("../fonts/NotoSerif-Bold.ttf")
+}
+@font-face{
+	font-family: Noto;
+	/*src: url("../../fonts/Dancing\ Script.ttf"); */
+	src: url("../fonts/NotoSerif-Regular.ttf")
+}
+  @keyframes typing {
+	0% { width: 0 }
+	40% { width: 4em}
+	60% {width: 4em;}
+	100% {width: 0;}
+  }
+  @keyframes blink {
+	from { border-color: transparent }
+	to { border-color: #febffb; }
+  }
+
+
+
 .timer_overlay
 {
 	position: absolute;
@@ -960,7 +1045,8 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(127,102,255,0.88);
+	background: #27790e;
+	background-image: linear-gradient(to right, #84cb00, #027d00, #84cb00);
 }
 .timer_container
 {
@@ -1474,7 +1560,7 @@ section
 	height: 59px;
 	border: none;
 	outline: none;
-	background: #7f66ff;
+	background: #febffb;
 	border-bottom: solid 3px #ffffff;
 	cursor: pointer;
 	margin-top: 13px;
