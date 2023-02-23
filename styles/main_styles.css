@@ -966,7 +966,6 @@ section
 }
 .typewriter-container p {
 	display: inline-block;
-	text-align: center;
 	font-family: Noto;
 	color: #febffb;
 	font-size: 3vw;

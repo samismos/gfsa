@@ -224,6 +224,20 @@
 
 @media only screen and (max-width: 575px)
 {
+	.typewriter-container {
+		height: 60px;
+	}
+
+	.typewriter-container p {
+		font-size: 25px;
+		top: 7px;
+	}
+
+	#changing-word {
+		display: inline-block !important;
+		font-size: 27px;
+		top: 10px;
+	}
 	h1
 	{
 		font-size: 36px;
